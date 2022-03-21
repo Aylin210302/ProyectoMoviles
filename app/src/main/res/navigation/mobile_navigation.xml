@@ -9,7 +9,11 @@
         android:id="@+id/nav_carro"
         android:name="com.proyectoMoviles.ui.carro.CarroFragment"
         android:label="@string/menu_carro"
-        tools:layout="@layout/fragment_carro" />
+        tools:layout="@layout/fragment_carro" >
+        <action
+            android:id="@+id/action_nav_carro_to_addCarroFragment"
+            app:destination="@id/nav_addCarro" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -22,4 +26,13 @@
         android:name="com.proyectoMoviles.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_addCarro"
+        android:name="com.proyectoMoviles.ui.carro.AddCarroFragment"
+        android:label="fragment_add_carro"
+        tools:layout="@layout/fragment_add_carro" >
+        <action
+            android:id="@+id/action_addCarroFragment_to_nav_carro"
+            app:destination="@id/nav_carro" />
+    </fragment>
 </navigation>

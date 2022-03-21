@@ -19,4 +19,17 @@
     <string name="menu_carro">Carro</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="msg_modelo_add">Modelo del carro</string>
+    <string name="msg_año_add">Año del carro</string>
+    <string name="msg_marca_add">Marca del carro</string>
+    <string name="msg_motor_add">Motor del carro</string>
+    <string name="msg_precio_add">Precio del carro</string>
+    <string name="msg_cantidadAsientos_add">Cantidad de asientos del carro</string>
+    <string name="msg_tipoCaja_add">Tipo de caja de cambios del carro</string>
+    <string name="msg_carro_add">Carro Agregado</string>
+    <string name="bt_add_carro">Agregar Carro</string>
 </resources>
