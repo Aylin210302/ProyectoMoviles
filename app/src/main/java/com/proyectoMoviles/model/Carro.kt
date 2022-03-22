@@ -27,5 +27,11 @@ data class Carro(
     val tipoCaja: String?,
     @ColumnInfo(name = "rutaImagen")
     val rutaImagen: String?,
+    @ColumnInfo(name = "correo")
+    val correo: String?,
+    @ColumnInfo(name = "telefono")
+    val telefono: String?,
+    @ColumnInfo(name = "web")
+    val web: String?
 ) : Parcelable
 

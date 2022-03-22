@@ -43,7 +43,10 @@ class AddCarroFragment : Fragment() {
             val precio = binding.etPrecio.text.toString().toDouble()
             val cantidadAsientos = binding.etCantidadAsientos.text.toString().toInt()
             val cajaCambio = binding.etCaja.text.toString()
-            val carro = Carro(0,modelo,año,marca,motor,precio,cantidadAsientos,cajaCambio,"")
+            val correo = binding.etCorreo.text.toString()
+            val telefono = binding.etTelefono.text.toString()
+            val web = binding.etWeb.text.toString()
+            val carro = Carro(0,modelo,año,marca,motor,precio,cantidadAsientos,cajaCambio,"",correo,telefono,web)
             carroViewModel.addCarro(carro)
             Toast.makeText(requireContext(),
                 getString(R.string.msg_carro_add),
