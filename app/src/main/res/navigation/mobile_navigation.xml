@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_nav_carro_to_addCarroFragment"
             app:destination="@id/nav_addCarro" />
+        <action
+            android:id="@+id/action_nav_carro_to_nav_updateCarro"
+            app:destination="@id/nav_updateCarro" />
     </fragment>
 
     <fragment
@@ -34,5 +37,17 @@
         <action
             android:id="@+id/action_addCarroFragment_to_nav_carro"
             app:destination="@id/nav_carro" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_updateCarro"
+        android:name="com.proyectoMoviles.ui.carro.UpdateCarroFragment"
+        android:label="fragment_update_carro"
+        tools:layout="@layout/fragment_update_carro" >
+        <action
+            android:id="@+id/action_nav_updateCarro_to_nav_carro"
+            app:destination="@id/nav_carro" />
+        <argument
+            android:name="carro"
+            app:argType="com.proyectoMoviles.model.Carro" />
     </fragment>
 </navigation>

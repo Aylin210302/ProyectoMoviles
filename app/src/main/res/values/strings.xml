@@ -30,6 +30,16 @@
     <string name="msg_precio_add">Precio del carro</string>
     <string name="msg_cantidadAsientos_add">Cantidad de asientos del carro</string>
     <string name="msg_tipoCaja_add">Tipo de caja de cambios del carro</string>
+
     <string name="msg_carro_add">Carro Agregado</string>
+    <string name="msg_carro_update">Carro Actualizado</string>
+    <string name="msg_carro_delete">Carro Eliminado</string>
+
+
     <string name="bt_add_carro">Agregar Carro</string>
+    <string name="bt_update_carro">Actualizar Carro</string>
+    <string name="menu_delete">Eliminar Carro</string>
+    <string name="msg_seguroBorrar">¿Está seguro de eliminar?</string>
+    <string name="no">No</string>
+    <string name="si">Si</string>
 </resources>
