@@ -107,8 +107,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/msg_web_add"
-                android:inputType="numberPassword"
-                android:minHeight="48dp" />
+                android:inputType="textPersonName" />
 
             <Button
                 android:id="@+id/btUpdateCarro"

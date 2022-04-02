@@ -25,10 +25,10 @@ class CarroViewModel(application: Application)
     }
 
     fun updateCarro(carro: Carro) {
-        viewModelScope.launch(Dispatchers.IO) {repository.addCarro(carro)}
+        viewModelScope.launch(Dispatchers.IO) {repository.updateCarro(carro)}
     }
 
     fun deleteCarro(carro: Carro) {
-        viewModelScope.launch(Dispatchers.IO) {repository.addCarro(carro)}
+        viewModelScope.launch(Dispatchers.IO) {repository.deleteCarro(carro)}
     }
 }
