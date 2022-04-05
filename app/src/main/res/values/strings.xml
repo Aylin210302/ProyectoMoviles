@@ -30,9 +30,9 @@
     <string name="msg_precio_add">Precio del carro</string>
     <string name="msg_cantidadAsientos_add">Cantidad de asientos del carro</string>
     <string name="msg_tipoCaja_add">Tipo de caja de cambios del carro</string>
-    <string name="msg_correo_add">Correo del carro</string>
-    <string name="msg_telefono_add">Telefono del carro</string>
-    <string name="msg_web_add">Sitio web del carro</string>
+    <string name="msg_correo_add">Correo del propietario</string>
+    <string name="msg_telefono_add">Telefono del propietario</string>
+    <string name="msg_web_add">Sitio web del propietario</string>
 
     <string name="msg_carro_add">Carro Agregado</string>
     <string name="msg_carro_update">Carro Actualizado</string>
@@ -42,7 +42,7 @@
     <string name="bt_add_carro">Agregar Carro</string>
     <string name="bt_update_carro">Actualizar Carro</string>
     <string name="menu_delete">Eliminar Carro</string>
-    <string name="msg_seguroBorrar">¿Está seguro de eliminar?</string>
+    <string name="msg_seguroBorrar">¿Está seguro de eliminar </string>
     <string name="no">No</string>
     <string name="si">Si</string>
 
@@ -50,8 +50,15 @@
     <string name="msg_phone_call">Realizar llamada telefónica</string>
     <string name="msg_whatsapp_send">Enviar mensaje WhatsApp</string>
     <string name="msg_web_view">Abrir sitio Web</string>
-    <string name="msg_saludos">Saludos amigos</string>
+    <string name="msg_saludos">Saludos</string>
     <string name="msg_mensaje_correo">Le escribo este correo para</string>
     <string name="msg_datos">Faltan datos</string>
     <string name="error">Error</string>
+
+    <string name="msg_imagen">Imagen del carro</string>
+    <string name="msg_take_photo">Toma foto</string>
+    <string name="msg_rotate_l">Rota izquierda</string>
+    <string name="msg_rotale_r">Rota a la derecha</string>
+    <string name="msg_subiendo_imagen">Subiendo imagen</string>
+    <string name="todo">para que no de error</string>
 </resources>

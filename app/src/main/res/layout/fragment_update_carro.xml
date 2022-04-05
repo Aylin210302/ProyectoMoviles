@@ -151,7 +151,14 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/web_logo" />
             </LinearLayout>
-
+            <ImageView
+                android:id="@+id/imagen"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:contentDescription="@string/msg_imagen"
+                android:scaleType="centerInside"
+                tools:ignore="ImageContrastCheck"
+                tools:src="@tools:sample/backgrounds/scenic" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

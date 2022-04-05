@@ -4,6 +4,7 @@ import android.Manifest
 import android.app.AlertDialog
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.media.MediaPlayer
 import android.net.Uri
 import android.os.Bundle
 import android.view.*
@@ -12,6 +13,7 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.bumptech.glide.Glide
 import com.proyectoMoviles.R
 import com.proyectoMoviles.databinding.FragmentUpdateCarroBinding
 import com.proyectoMoviles.model.Carro
@@ -24,6 +26,8 @@ class UpdateCarroFragment : Fragment() {
 
     private val args by navArgs<UpdateCarroFragmentArgs>()
 
+    private lateinit var mediaPlayer: MediaPlayer
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -35,6 +39,7 @@ class UpdateCarroFragment : Fragment() {
 
         binding.etModelo.setText(args.carro.modelo)
         binding.etAnnio.setText(args.carro.año)
+        binding.etMarca.setText(args.carro.marca)
         binding.etMotor.setText(args.carro.motor)
         binding.etPrecio.setText(args.carro.precio.toString())
         binding.etCantidadAsientos.setText(args.carro.cantidadAsientos.toString())
@@ -48,6 +53,13 @@ class UpdateCarroFragment : Fragment() {
         binding.btPhone.setOnClickListener { hacerLlamada() }
         binding.btWhatsapp.setOnClickListener { enviarWhatsap() }
         binding.btWeb.setOnClickListener { verWeb() }
+
+        if(args.carro.rutaImagen?.isNotEmpty() == true){
+            Glide.with(requireContext())
+                .load(args.carro.rutaImagen)
+                .fitCenter()
+                .into(binding.imagen)
+        }
 
         setHasOptionsMenu(true)
 
@@ -145,7 +157,7 @@ class UpdateCarroFragment : Fragment() {
             val correo = binding.etCorreo.text.toString()
             val telefono = binding.etTelefono.text.toString()
             val web = binding.etWeb.text.toString()
-            val carro = Carro(args.carro.id,modelo,año,marca,motor,precio,cantidadAsientos,cajaCambio,"",correo,telefono,web)
+            val carro = Carro(args.carro.id,modelo,año,marca,motor,precio,cantidadAsientos,cajaCambio,args.carro.rutaImagen,correo,telefono,web)
             carroViewModel.updateCarro(carro)
             Toast.makeText(requireContext(),
                 getString(R.string.msg_carro_update),
@@ -158,7 +170,7 @@ class UpdateCarroFragment : Fragment() {
     private fun deleteCarro() {
         val builder = AlertDialog.Builder(requireContext())
         builder.setTitle(R.string.menu_delete)
-        builder.setMessage(getString(R.string.msg_seguroBorrar) + "${args.carro.modelo}?")
+        builder.setMessage(getString(R.string.msg_seguroBorrar)  + " ${args.carro.modelo}?")
         builder.setNegativeButton(getString(R.string.no)) {_,_ ->}
         builder.setPositiveButton(getString((R.string.si))) {_,_ ->
             carroViewModel.deleteCarro(args.carro)
