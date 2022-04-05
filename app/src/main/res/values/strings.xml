@@ -61,4 +61,7 @@
     <string name="msg_rotale_r">Rota a la derecha</string>
     <string name="msg_subiendo_imagen">Subiendo imagen</string>
     <string name="todo">para que no de error</string>
+
+    <string name="msg_google">Login con Google</string>
+    <string name="id_web">491409476404-v0ut2bu0h6ro94604ol9sk934demrjg3.apps.googleusercontent.com</string>
 </resources>
