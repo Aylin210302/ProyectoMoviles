@@ -1,5 +1,6 @@
 package com.proyectoMoviles
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -49,6 +50,7 @@ class Principal : AppCompatActivity() {
     }
 
     //Toma la información del usuario y la presenta dentro de la aplicación
+    @SuppressLint("CutPasteId")
     private fun actualiza(navView: NavigationView) {
         val vista: View =navView.getHeaderView(0)
         val tvNombre: TextView = vista.findViewById(R.id.nombre_usuario)
