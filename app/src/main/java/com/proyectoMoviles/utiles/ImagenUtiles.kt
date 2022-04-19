@@ -1,4 +1,4 @@
-package com.lugares.utiles
+package com.proyectoMoviles.utiles
 
 import android.annotation.SuppressLint
 import android.content.Context

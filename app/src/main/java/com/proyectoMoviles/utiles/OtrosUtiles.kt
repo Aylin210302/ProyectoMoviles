@@ -1,4 +1,4 @@
-package com.lugares.utiles
+package com.proyectoMoviles.utiles
 
 import java.text.SimpleDateFormat
 import java.util.*
